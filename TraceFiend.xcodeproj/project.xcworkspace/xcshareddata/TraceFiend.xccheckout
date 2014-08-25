@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>13D1B5E9-2593-4B79-9FE8-C8D6B5F060D8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TraceFiend</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6EBD41E1-936E-4F25-BB77-0229AD29A60D</key>
+		<string>ssh://github.com/chinmaygarde/TraceFiend.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TraceFiend.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6EBD41E1-936E-4F25-BB77-0229AD29A60D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/chinmaygarde/TraceFiend.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6EBD41E1-936E-4F25-BB77-0229AD29A60D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6EBD41E1-936E-4F25-BB77-0229AD29A60D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TraceFiend</string>
+		</dict>
+	</array>
+</dict>
+</plist>

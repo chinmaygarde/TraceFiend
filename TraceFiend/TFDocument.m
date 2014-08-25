@@ -76,7 +76,8 @@
     self.commandListSource.commands = frame.functions;
     [self.commandList reloadData];
     
-//    self.framesu
+    self.frameSummarySource.frame = frame;
+    [self.frameSummary reloadData];
 }
 
 -(CGFloat) framePosition {

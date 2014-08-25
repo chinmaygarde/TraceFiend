@@ -124,6 +124,7 @@
 		EAC1916F1935A2DA007E3B72 /* TFGLTraceReader.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC1916B1935A2AF007E3B72 /* TFGLTraceReader.h */; };
 		EAC191731935A3B1007E3B72 /* Sample.gltrace in Resources */ = {isa = PBXBuildFile; fileRef = EAC191721935A3B1007E3B72 /* Sample.gltrace */; };
 		EAC191751935A776007E3B72 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC191741935A776007E3B72 /* libc++.dylib */; };
+		EAE0BB981944025C003F7E83 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE0BB9319440244003F7E83 /* CorePlot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = EAC18FB419359FCC007E3B72;
 			remoteInfo = protobuf;
+		};
+		EAE0BB9219440244003F7E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE0BB8C19440244003F7E83 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = CorePlot;
+		};
+		EAE0BB9419440244003F7E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE0BB8C19440244003F7E83 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = UnitTests;
+		};
+		EAE0BB9619440257003F7E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE0BB8C19440244003F7E83 /* CorePlot.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = CorePlot;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -318,6 +340,7 @@
 		EAC1916C1935A2AF007E3B72 /* TFGLTraceReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFGLTraceReader.m; sourceTree = "<group>"; };
 		EAC191721935A3B1007E3B72 /* Sample.gltrace */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sample.gltrace; sourceTree = "<group>"; };
 		EAC191741935A776007E3B72 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		EAE0BB8C19440244003F7E83 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = CorePlot/framework/CorePlot.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +348,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE0BB981944025C003F7E83 /* CorePlot.framework in Frameworks */,
 				EAC191751935A776007E3B72 /* libc++.dylib in Frameworks */,
 				EAC191671935A01E007E3B72 /* libprotobuf.a in Frameworks */,
 				EAC18E0C19359C7B007E3B72 /* Cocoa.framework in Frameworks */,
@@ -426,6 +450,7 @@
 		EAC18E0A19359C7B007E3B72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAE0BB8C19440244003F7E83 /* CorePlot.xcodeproj */,
 				EAC191741935A776007E3B72 /* libc++.dylib */,
 				EAC18E0B19359C7B007E3B72 /* Cocoa.framework */,
 				EAC18E2D19359C7B007E3B72 /* XCTest.framework */,
@@ -650,6 +675,15 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		EAE0BB8D19440244003F7E83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAE0BB9319440244003F7E83 /* CorePlot.framework */,
+				EAE0BB9519440244003F7E83 /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -735,6 +769,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EAE0BB9719440257003F7E83 /* PBXTargetDependency */,
 				EAC191661935A01A007E3B72 /* PBXTargetDependency */,
 			);
 			name = TraceFiend;
@@ -780,6 +815,12 @@
 			mainGroup = EAC18DFF19359C7B007E3B72;
 			productRefGroup = EAC18E0919359C7B007E3B72 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EAE0BB8D19440244003F7E83 /* Products */;
+					ProjectRef = EAE0BB8C19440244003F7E83 /* CorePlot.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EAC18E0719359C7B007E3B72 /* TraceFiend */,
@@ -787,6 +828,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EAE0BB9319440244003F7E83 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = EAE0BB9219440244003F7E83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EAE0BB9519440244003F7E83 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = EAE0BB9419440244003F7E83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EAC18E0619359C7B007E3B72 /* Resources */ = {
@@ -873,6 +931,11 @@
 			isa = PBXTargetDependency;
 			target = EAC18FB419359FCC007E3B72 /* protobuf */;
 			targetProxy = EAC191651935A01A007E3B72 /* PBXContainerItemProxy */;
+		};
+		EAE0BB9719440257003F7E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CorePlot;
+			targetProxy = EAE0BB9619440257003F7E83 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

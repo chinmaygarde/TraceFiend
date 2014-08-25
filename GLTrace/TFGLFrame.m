@@ -17,9 +17,13 @@
     if (self) {
         _functions = functions;
         
+        NSMutableSet *contextSet = [[NSMutableSet alloc] init];
+        
         for (TFGLFunction *function in functions) {
             _totalThreadTime += function.threadTime;
             _totalWallTime += function.wallTime;
+            
+            [contextSet addObject:@(function.contextID)];
             
             switch (function.type) {
                 case TFGLFunction_glDrawArrays:
@@ -32,6 +36,8 @@
                     break;
             }
         }
+        
+        _activeContexts = contextSet.count;
     }
     
     return self;

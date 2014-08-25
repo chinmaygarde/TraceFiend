@@ -17,6 +17,7 @@
 @property (nonatomic, readonly) NSTimeInterval totalThreadTime;
 
 @property (nonatomic, readonly) NSUInteger drawCalls;
+@property (nonatomic, readonly) NSUInteger activeContexts;
 
 -(instancetype) initWithFunctions:(NSArray *) functions;
 
